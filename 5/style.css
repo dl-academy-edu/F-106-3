@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container_min {
+  min-height: 50000px;
+}
+.container_red {
+  background-color: red;
+}
+
+
+.button-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: rgb(90, 255, 247);
+  border: none;
+  cursor: pointer;
+}
+
+.button-to-top_hidden {
+  display: none;
+}
+
+.contextmenu {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.contextmenu_hidden {
+  display: none;
+}

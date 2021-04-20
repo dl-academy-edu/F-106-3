@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <form name="signUp">
+      <h2 class="mt-5">Регистрация: </h2>
+      <div class="form-row mt-3">
+        <div class="col">
+          <label for="exampleFormControlInput1">
+            Почта (Email):
+          </label>
+          <input name="email" type="text" class="form-control" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+        </div>
+        <div class="col">
+          <label for="exampleFormControlInput2">Пароль: </label>
+          <input name="password" type="password" class="form-control" id="exampleFormControlInput2">
+        </div>
+      </div>
+
+      <div class="form-row mt-3">
+        <div class="col">
+          <label for="exampleFormControlInput3">Имя: </label>
+          <input name="name" class="form-control" id="exampleFormControlInput3">
+        </div>
+        <div class="col">
+          <label for="exampleFormControlFile1">Аватар: </label>
+          <input name="avatar" type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+      </div>
+
+      <div>
+        <div class="form-check">
+          <input name="accept" class="form-check-input" type="radio" value="yes" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Принимаю все, что тут сказано
+          </label>
+        </div>
+        <div class="form-check">
+          <input name="accept" class="form-check-input" type="radio" value="no" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Я против!
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Регистрация</button>
+    </form>
+    <form name="signIn">
+      <h2 class="mt-5">Вход: </h2>
+      <div class="form-row mt-3">
+        <div class="col">
+          <label for="exampleFormControlInput11">Почта (Email): </label>
+          <input name="email" type="email" class="form-control" id="exampleFormControlInput11"
+            placeholder="name@example.com">
+        </div>
+        <div class="col">
+          <label for="exampleFormControlInput12">Пароль: </label>
+          <input name="password" type="password" class="form-control" id="exampleFormControlInput12">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-3">Вход</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
