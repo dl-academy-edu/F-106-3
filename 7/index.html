@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="slider">
+      <div class="slider__wrapper slider__wrapper_js">
+        <div class="slider__inner-wrapper slider__inner-wrapper_js">
+          <div class="slider__slide slider__slide_js">this is 1 slide</div>
+          <div class="slider__slide slider__slide_js">this is 2 slide</div>
+          <div class="slider__slide slider__slide_js">this is 3 slide</div>
+          <div class="slider__slide slider__slide_js">this is 4 slide</div>
+        </div>
+      </div>
+      <div class="slider__bottom-panel">
+        <button class="slider__button slider__button-back_js slider__button_back">⇦</button>
+        <div class="slider__pagination slider__pagination_js"></div>
+        <button class="slider__button slider__button-next_js slider__button_next">⇨</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form class="container form_js">
+    <div class="form-group form-check">
+      <input name="selectOf" type="checkbox" class="form-check-input" id="exampleCheck1" value="1">
+      <label class="form-check-label" for="exampleCheck1">1</label>
+    </div>
+    <div class="form-group form-check">
+      <input name="selectOf" type="checkbox" class="form-check-input" id="exampleCheck2" value="2">
+      <label class="form-check-label" for="exampleCheck2">2</label>
+    </div>
+    <div class="form-group form-check">
+      <input name="selectOf" type="checkbox" class="form-check-input" id="exampleCheck3" value="3">
+      <label class="form-check-label" for="exampleCheck3">3</label>
+    </div>
+    <div class="form-group form-check">
+      <input name="selectOf" type="checkbox" class="form-check-input" id="exampleCheck4" value="4">
+      <label class="form-check-label" for="exampleCheck4">4</label>
+    </div>
+    <div class="form-row mt-3">
+      <div class="col">
+        <label for="exampleFormControlInput3">Имя: </label>
+        <input name="name" type="text" class="form-control" id="exampleFormControlInput3">
+      </div>
+      <div class="col">
+        <div class="form-group form-radio">
+          <input name="option" type="radio" class="form-radio-input" id="exampleCheck5" value="1">
+          <label class="form-radio-label" for="exampleCheck5">1</label>
+        </div>
+        <div class="form-group form-radio">
+          <input name="option" type="radio" class="form-radio-input" id="exampleCheck6" value="2">
+          <label class="form-radio-label" for="exampleCheck6">2</label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Найти</button>
+  </form>
+
+  <div class="container ">
+    <h1>Тут будет результат поиска:</h1>
+    <pre class="result_js"></div>
+</div>
+
+<div class="container pagination_js">
+    <a href="?page=1" class="link_js">Старница 1</a>
+    <a href="?page=2" class="link_js">Старница 2</a>
+    <a href="?page=3" class="link_js">Старница 3</a>
+    <a href="?page=4" class="link_js">Старница 4</a>
+</div>
+
+  <div class="container">
+    <div class="slider">
+      <div class="slider__wrapper slider__wrapper_js">
+        <div class="slider__inner-wrapper slider__inner-wrapper_js">
+          <div class="slider__slide slider__slide_js">this is 1 slide</div>
+          <div class="slider__slide slider__slide_js">this is 2 slide</div>
+          <div class="slider__slide slider__slide_js">this is 3 slide</div>
+          <div class="slider__slide slider__slide_js">this is 4 slide</div>
+        </div>
+      </div>
+      <div class="slider__bottom-panel">
+        <button class="slider__button slider__button-back_js slider__button_back">⇦</button>
+        <div class="slider__pagination slider__pagination_js"></div>
+        <button class="slider__button slider__button-next_js slider__button_next">⇨</button>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
