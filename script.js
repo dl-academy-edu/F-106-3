@@ -74,4 +74,4 @@ function summ(array) {
   setTimeout(() => {
     clearTimeout(id);
   }, 10 * 1000);
-})();
+});

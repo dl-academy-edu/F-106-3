@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form class="container form_js">
+    <div class="tag-box_js">
+
+    </div>
+    <div class="form-row mt-3">
+      <div class="col">
+        <label for="exampleFormControlInput3">Поиск: </label>
+        <input name="name" type="text" class="form-control" id="exampleFormControlInput3">
+      </div>
+      <div class="col">
+        <div class="form-group form-radio">
+          <input name="views" type="radio" class="form-radio-input" id="Check5" value="1-10">
+          <label class="form-radio-label" for="Check5">1-10</label>
+        </div>
+        <div class="form-group form-radio">
+          <input name="views" type="radio" class="form-radio-input" id="Check6" value="11-9999">
+          <label class="form-radio-label" for="Check6">11-9999</label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Найти</button>
+  </form>
+
+  <div class="container ">
+    <h1>Тут будет результат поиска:</h1>
+    <div class="result_js row"></div>
+  </div>
+
+  <div class="container pagination_js">
+    <a href="?page=1" class="link_js">Старница 1</a>
+    <a href="?page=2" class="link_js">Старница 2</a>
+    <a href="?page=3" class="link_js">Старница 3</a>
+    <a href="?page=4" class="link_js">Старница 4</a>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
