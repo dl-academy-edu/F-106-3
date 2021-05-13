@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="common.css">
+  <title>Main</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__content">
+      <a href="/" class="header__link header__link_active">Main</a>
+      <div>
+        <button class="header__link j-register-button">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Main</h1>
+    </div>
+  </section>
+
+  <div class="modal j-modal-login hidden">
+    <div class="modal__content">
+      <div class="modal__close-button j-close-modal-login">X</div>
+      <form name="loginForm" class="modal__form">
+        <input type="text" name="email" class="modal__input" placeholder="Enter email">
+        <input type="password" name="password" class="modal__input" placeholder="Enter password">
+        <button class="site-button">Log in</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal j-modal-register hidden">
+    <div class="modal__content">
+      <div class="modal__close-button j-close-modal-register">X</div>
+      <form name="registerForm" class="modal__form form-row">
+        <div class="col-12"><input type="text" name="email" class="modal__input w-100" placeholder="Enter email"></div>
+        <div class="col-12"><input type="text" name="name" class="modal__input w-100" placeholder="Enter name"></div>
+        <div class="col-12"><input type="text" name="surname" class="modal__input w-100" placeholder="Enter surname"></div>
+        <div class="col-12"><input type="password" name="password" class="modal__input w-100" placeholder="Enter password"></div>
+        <div class="col-12"><input type="text" name="location" class="modal__input w-100" placeholder="Enter location"></div>
+        <div class="col-12"><input type="number" name="age" class="modal__input w-100" placeholder="Enter age"></div>
+        <div class="col-12"><button class="site-button w-100">Log in</button></div>
+        <div class="loader_js loader hidden">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
